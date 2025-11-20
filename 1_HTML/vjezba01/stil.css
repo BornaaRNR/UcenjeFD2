@@ -1,0 +1,37 @@
+body{
+    background-color: antiquewhite;
+}
+
+h1{
+    color: #ff00ff;
+    text-align: center;
+}
+
+.naslov{
+    font-family: sans-serif;
+}
+
+#sadrzaj p{
+    line-height: 0.9rem;
+    color: blue;
+}
+
+ul{
+    list-style: none; 
+}
+
+ul li::before{
+    content: '🖤';
+}
+
+ol{
+    list-style-type: upper-roman;
+}
+
+mark{
+    background-color: rgb(191, 191, 17);
+    color: black;
+    border-radius: 15px;
+    padding: 6px,6px;
+    font-weight: 700;
+}
