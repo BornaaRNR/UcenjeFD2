@@ -1,0 +1,62 @@
+body{
+    background-color: whitesmoke;
+    padding-left: 20px;
+}
+
+h1{
+    font-family: sans-serif;
+    color:#243C5C;
+}
+
+h2{
+    color: red;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 450;
+}
+
+#family{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: normal;
+}
+
+mark{
+    background-color: whitesmoke;
+    color: tomato;
+}
+
+.kocka{
+    width: 650px;
+    height: 350px;
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid rgb(231, 231, 231);
+    padding-left: 18px;
+    padding-top: 20px;
+}
+
+.kocka p{
+    font-family: sans-serif;
+}
+
+.drugi{
+    margin-top: 45px;
+}
+
+.mark2{
+    background-color: yellow;
+    color: black;
+}
+
+.bigi{
+    font-size: 35px;
+}
+
+.skup{
+    background-color: whitesmoke;
+    color: black;
+}
+
+.Nali{
+    font-family: sans-serif;
+}
