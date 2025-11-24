@@ -55,8 +55,37 @@ mark{
 .skup{
     background-color: whitesmoke;
     color: black;
+    font-family: 'Courier New', Courier, monospace;
 }
 
-.Nali{
+ul{
+    list-style: none; 
+    padding-left: 0px;
+}
+
+ul li::before{
+    content: '✅';
+}
+
+.lista{
     font-family: sans-serif;
+    margin-top: 10px;
+}
+
+.postavitboju{
+    color: #FF6600;
+    text-decoration: underline;
+}
+
+.p2{
+    margin-top: 45px;
+}
+
+.p3{
+    margin-top: -10px;
+}
+
+.kraj{
+    color: rgb(136, 136, 136);
+    margin-left: 50px;
 }
