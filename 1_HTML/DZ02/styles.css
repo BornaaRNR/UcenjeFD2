@@ -1,0 +1,261 @@
+:root {
+    --plava: #0082c8;
+    --narandzasta: #dc975bf5;
+}
+
+body {
+    font-family: Georgia, serif;
+    background: #f3f3f3;
+}
+
+.container {
+    width: 50%;
+    max-width: 580px;
+    background: white;
+    padding: 40px;
+    margin: 40px auto;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.Gnaslov {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: rgb(225, 225, 225) 2px 2px 0px;
+    text-align: center;
+    font-size: 34px;
+    margin-top: 10px;
+    color: #243c5a;
+    letter-spacing: 2px;
+}
+
+.svejepo{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+
+.TimBernersLee{
+    text-decoration: dotted underline;
+}
+
+.OddoWeba {
+    text-align: center;
+    font-style: italic;
+    color: #8f9794;
+    border-bottom: 2px solid var(--narandzasta);
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.Velikoslovo{
+    font-size: 30px;
+}
+
+.highlight {
+    background: #ffe8a8;
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+
+.img-box {
+    margin: 30px 0;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: fit-content;
+    padding: 10px;
+    height: 352px;
+}
+
+.img-box img {
+    width: 100%;
+    max-width: 800px;
+    object-fit: center;
+}
+
+.img-Otacweba {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    color: #666;
+    margin-top: 14px;
+    text-align: center;
+    font-style: italic;
+}
+
+.jezikblabla {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    border-bottom: 2px solid #f7f7f7;
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+}
+
+.HTMLpodp{
+    color:var(--narandzasta)
+}
+
+.Podnaslovii{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.lista {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    list-style-type:decimal-leading-zero;
+    list-style-position: inside;
+    font-size: 1.0em;
+    font-weight: b;
+    border-left: 4px solid var(--plava);
+    padding-left: 12%;
+    background-color: #fefefe;
+}
+
+.HTMLOVI{
+    color:var(--narandzasta);
+}
+
+.bro{
+    font-size: 12px;
+}
+
+.lista li {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.Osnovnastruktura{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    padding-bottom: 0px;
+    margin-bottom: 25px;
+}
+
+.crnilo-block {
+    background: #2d2d2d;
+    color: #eee;
+    border-left: 8px solid rgb(220, 187, 41);
+    border-radius: 6px;
+    overflow-x: auto;
+    font-family: Consolas, monospace;
+    font-size: 14px;
+    padding-inline-start: 10px;
+}
+.u-crnilu-block{
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.7;
+}
+
+.dabistespremilikod {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    padding-bottom: 0px;
+    margin-bottom: 25px;
+}
+
+.definicija {
+    padding: 1px 20px;
+    margin: 0;
+    background-color: #eef1f1;
+    border-radius: 8px;
+    line-height: 1.8;
+    font-size: 1.4em;
+}
+
+.httpiuri{
+    color: var(--plava) ;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.nadamsekraj {
+    background: #ffe1e1;
+    padding: 15px;
+    padding-top: 20px;
+    padding-bottom: 2px;
+    border-left: 4px solid #ff6b6b;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.timberners {
+    font-style: italic;
+    padding-bottom: px;
+}
+
+.uvodg {
+    position: relative;
+    font-size: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.uvodg::before {
+    content: "••• ••";
+    position: absolute;
+    top: -12px; 
+    left: 53.55%;
+    transform: translateX(-50%);
+    color: red;
+    font-size: 0.8em;
+    letter-spacing: 4px;
+}
+
+.napomena {
+    font-size: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-block-end-style: dotted;
+    border-block-end-width: 2px;
+    border-block-end-color: rgb(232, 232, 232);
+    padding-bottom: 50px;
+}
+
+.znak {
+    font-size: 1.1em;
+    margin-left: -22px;
+}
+
+.znak::before {
+    content: "ami";
+    position: relative;
+    top: -19px; 
+    left: 4%;
+    transform: translateX(-50%);
+    color: rgb(156, 156, 156);
+    font-size: 0.8em;
+}
+
+footer {
+    text-align: center;
+}
+
+.footer-autor {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+
+.autor-web {
+    color: var(--narandzasta);
+}
+
+.footer-kontakt {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+
+.footer-email {
+    color: var(--plava);
+    text-decoration:wavy underline;
+    text-decoration-color: var(--narandzasta);
+}
+
+.footer-datum {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+
+.copyright {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    margin-top: 40px;
+}
