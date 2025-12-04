@@ -1,0 +1,31 @@
+body{
+    background-color:#f0f1f0 ;
+}
+
+table,td,th{
+    border: 1px solid blue;
+    border-collapse: collapse; /*skuplja liniju*/
+}
+
+table{
+    width: 100vh;
+}
+
+th{
+    background-color: antiquewhite;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+
+tbody tr:hover{
+    background-color: aqua;
+}
+
+tbody tr :first-child{  /*(da sam stavio poslije child(3) pomako bi HEX red) kako bi pomakli godine u desno*/
+    text-align: right;
+}
+
+caption{ /*Naslov caption boje ce biti dole*/
+    caption-side: bottom;
+}
