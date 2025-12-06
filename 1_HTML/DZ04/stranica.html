@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prijava</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <img src="img/katanac.png" alt="katanac">
+
+    <div class="sigurna-prijava">
+        <table>
+            <form action="https://origo.hr" method="get">
+        <fieldset>
+            <legend class="naslov">Sigurna prijava</legend>
+
+            <div class="info-input">
+                <label for="korisnicko_ime">Korisničko ime</label>  
+                <input class="korisnickibox" type="text" name="" placeholder="admin">              
+            </div>
+            
+            <div class="info-input">
+                <label for="lozinka">Lozinka</label>
+                <input class="korisnickibox" type="password" name="" id="" placeholder="*******">
+            </div>
+
+            <div class="Prijavadugme">
+                <input type="checkbox" id="zapamti_uredjaj">
+                <label for="zapamti_uredjaj">Zapamti uređaj</label>
+            </div>
+
+            <button type="submit" class="login-button">Prijavi se</button>
+
+        </fieldset>
+    </form>
+        </table>
+    </div>
+
+     <div class="nedavne-aktivnosti-container">
+        <h3>Nedavne aktivnosti prijave</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>IP ADRESA</th>
+                    <th>VRIJEME</th>
+                    <th>STATUS</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>192.168.1.15</td>
+                    <td>12:45</td>
+                    <td class="success">Uspjeh</td>
+                </tr>
+                <tr>
+                    <td>10.0.0.52</td>
+                    <td>Jučer</td>
+                    <td class="failure">Greška</td>
+                </tr>
+                <tr>
+                    <td>88.102.x.x</td>
+                    <td>01.12.</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="show-more">
+            <a href="#">Prikaz zadnja 3 pokušaja</a>
+        </div>
+    </div>
+
+</body>
+</html>
