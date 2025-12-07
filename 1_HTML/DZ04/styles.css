@@ -1,18 +1,18 @@
 body {
-    background-color: whitesmoke; /* Svijetlo siva pozadina */
-   display: flex;
+    background-color: whitesmoke;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 1100px;
+    min-height: 95vh;
     margin: 0;
-    padding: 20px;
+    padding: 0;
 }
 
 img{
 
     margin: 0 auto;
-    margin-top: -17%;
+    margin-top: 20px;
     
 }
 
@@ -60,9 +60,7 @@ fieldset{ /* linija oko sigurne prijave i pozadina*/
 }
 
 .korisnickibox{
-    /* Smanjite ovu vrijednost da pomaknete desni rub polja lijevo */
-    width: 440px; /* Primjer smanjene širine, prilagodite po potrebi */
-    
+    width: 440px;
     height: 35px;
     border-color: #ddd;
     border-radius: 5px;
@@ -132,7 +130,7 @@ table {
     border-collapse: collapse;
     background: white;
     border-radius: 8px;
-    overflow: hidden; /* Za zaokruživanje rubova */
+    overflow: hidden;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
@@ -141,8 +139,25 @@ table th, table td {
     text-align: left;
     font-size: 14px;
     background-color: white;
-    border-bottom: 1px solid blue;
-    border-collapse: collapse; /*skuplja liniju*/
+    border-bottom: 2px solid whitesmoke;
+}
+
+table td:nth-child(2) {
+    padding-left:150px;
+}
+
+table td:nth-child(3) {
+    padding-right:80px;
+}
+
+.prikaz{
+    font-family: sans-serif;
+    font-size: 13px;
+    color: #9b9b9b;
+}
+
+.VRIJEME{
+    padding-left: 150px;
 }
 
 table th {
@@ -152,39 +167,12 @@ table th {
     text-transform: uppercase;
 }
 
-table tr:nth-child(even) {
-    background-color: #fafafa;
-}
-
-table tr:hover {
-    background-color: #f2f2f2;
-}
-
-.success {
-    color: #38a169; /* Zelena za Uspjeh */
+.Uspjeh {
+    color: #38a169;
     font-weight: 600;
 }
 
-.failure {
-    color: #e53e3e; /* Crvena za Greška */
+.Greska {
+    color: #e53e3e;
     font-weight: 600;
-}
-
-.show-more {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.show-more a {
-    color: #4285f4;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: 500;
-    padding-bottom: 2px;
-    border-bottom: 1px dashed #4285f4;
-}
-
-.show-more a:hover {
-    color: #357ae8;
-    border-bottom: 1px dashed #357ae8;
 }
