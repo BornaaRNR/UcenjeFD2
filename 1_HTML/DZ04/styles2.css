@@ -25,14 +25,14 @@ a {
 }
 
 /* Header/Navigacija */
-.header-bg {
+.header-uvod {
     background-color:  #212121;
     color: var(--color-text-light);
     padding: 10px 0;
     font-size:18px ;
 }
 
-.header-content {
+.header-kontent {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
@@ -73,33 +73,33 @@ nav a:hover {
 }
 
 /* Hero sekcija (ispod headera) */
-.hero-section {
+.hero-dio {
     background-color: #141414; /* Tamnija pozadina */
     color: var(--color-text-light);
     padding: 80px 20px;
     text-align: center;
 }
 
-.hero-content {
+.hero-kontent {
     max-width: 800px;
     margin: 0 auto;
 }
 
-.hero-content h2 {
+.hero-kontent h2 {
     font-size: 2.4em;
     margin-bottom: 19px;
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.hero-content p {
+.hero-kontent p {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 0.9em;
     font-weight: 700;
     margin-bottom: 30px;
 }
 
-.btn-primary {
+.button {
     display: inline-block;
     background-color: var(--color-accent);
     color: var(--color-text-dark);
@@ -113,7 +113,7 @@ nav a:hover {
     
 }
 
-.btn-primary:hover {
+.button:hover {
     background-color: #d1882c;
 }
 
@@ -132,7 +132,7 @@ section h3 {
     margin-bottom: 15px;
 }
 
-.section-subtitle {
+.naslovna-sekcije {
     text-align: center;
     margin-bottom: 40px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -141,13 +141,12 @@ section h3 {
 }
 
 /* Sekcija Usluge */
-.services-section {
+.services-sekcija {
     background-color: var(--color-text-light);
 }
 
 .services-grid {
-    display: grid;
-    /* 3 kolone jednakog širine */
+    display: grid;  /* 3 kolone jednake sirine */
     grid-template-columns: repeat(3, 1fr); 
     gap: 30px;
     margin-left: 24px;
@@ -180,18 +179,18 @@ section h3 {
 
 /* Sekcija O tvrtki */
 
-.about-container{
+.Otvrtki-kontejner{
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-.about-section h3{
+.Otvrtki h3{
    text-align: left;
    font-size: 1.3em;
    margin-bottom: -7%;
 }
-.about-content-grid {
+.Otvrtki-dio-grid {
     display: grid;
     grid-template-columns: 1fr 1fr; 
     gap: 30px;
@@ -199,12 +198,12 @@ section h3 {
     padding-bottom: 20px;
 }
 
-.about-content-grid p {
+.Otvrtki-dio-grid p {
     font-weight: 400;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.about-content-grid p:first-child {
+.Otvrtki-dio-grid p:first-child {
     padding-top: 80px;
     padding-right: 16px;
     line-height: 1.7em;
@@ -213,7 +212,7 @@ section h3 {
     border-right: 2px solid var(--color-border);
 }
 
-.about-content-grid p:last-child {
+.Otvrtki-dio-grid p:last-child {
     line-height: 1.7em;
     font-size: 1.0em;
     text-align: justify;
@@ -221,7 +220,7 @@ section h3 {
 
 
 /* Sekcija Cjenik (Tabela) */
-.pricing-section h3 {
+.cijenik h3 {
     text-align: left;
     margin-bottom: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -303,7 +302,7 @@ tbody tr:nth-child(5){
     margin-bottom: 35px;
 }
 
-.contact-form-container {
+.kontakt-form-kontejner {
     background-color: var(--color-text-light);
     max-width: 550px;
     margin: 0 auto;
@@ -326,7 +325,7 @@ legend {
     margin-bottom: 15px;
 }
 
-.form-group {
+.form-grupa {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 0.9em;
     font-weight: bold;
@@ -335,15 +334,15 @@ legend {
     padding-right: 16px;
 }
 
-.form-group label {
+.form-grupa label {
     display: block;
     font-size: 0.9em;
     margin-bottom: 6px;
 }
 
-.form-group input[type="text"],
-.form-group input[type="email"],
-.form-group textarea {
+.form-grupa input[type="text"],
+.form-grupa input[type="email"],
+.form-grupa textarea {
     width: 100%;
     padding: 8px;
     border: 1px solid var(--color-border);
@@ -379,17 +378,17 @@ label[for="hitno"] {
     margin-top: 12px;
 }
 
-.range-status-group {
+.dio-opterecenost {
     max-width: 550px;
     margin: 30px auto;
     padding: 0;
 }
 
-label[for="satisfaction"]{
+label[for="naslov-gornji-opterecenost"]{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.range-status-group label[for="satisfaction"] {
+.dio-opterecenost label[for="naslov-gornji-opterecenost"] {
     display: block;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
@@ -397,7 +396,7 @@ label[for="satisfaction"]{
     margin-left: 0; 
 } 
 
-.range-status-group label[for="popunjenost"]{
+.dio-opterecenost label[for="popunjenost"]{
     display: block;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: normal;
@@ -412,7 +411,7 @@ input[type="range"] {
     accent-color: red;
 }
 
-.btn-submit {
+.btn-posalji {
     width: 100%;
     background-color: var(--color-accent);
     color: var(--color-primary);
@@ -428,7 +427,7 @@ input[type="range"] {
     box-shadow: var(--color-border) 0px 3px 7px;
 }
 
-.btn-submit:hover {
+.btn-posalji:hover {
     background-color: #d1882c;
 }
 

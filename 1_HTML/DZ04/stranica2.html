@@ -5,12 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BUŠENJE KAMENA</title>
     <link rel="stylesheet" href="styles2.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header class="header-bg">
-        <div class="header-content">
+    <header class="header-uvod">
+        <div class="header-kontent">
             <h1 class="logo">BUŠENJE KAMENA</h1>
             <nav>
                 <ul>
@@ -24,17 +23,17 @@
     </header>
 
     <main>
-        <section class="hero-section">
-            <div class="hero-content">
+        <section class="hero-dio">
+            <div class="hero-kontent">
                 <h2>Preciznost u svakom milimetru</h2>
                 <p>Vodeća tvrtka za dijamantno bušenje, rezanje armiranog betona i kontrolirano rušenje.</p>
-                <a href="#" class="btn-primary">ZATRAŽITE PONUDU</a>
+                <a href="#" class="button">ZATRAŽITE PONUDU</a>
             </div>
         </section>
 
-        <section id="usluge" class="services-section">
+        <section id="usluge" class="services-sekcija">
             <h3>Naše Usluge</h3>
-            <p class="section-subtitle">Koristimo najmoderniju tehnologiju za obradu kamena i betona.</p>
+            <p class="naslovna-sekcije">Koristimo najmoderniju tehnologiju za obradu kamena i betona.</p>
 
             <div class="services-grid">
                 <div class="service-card">
@@ -52,17 +51,17 @@
             </div>
         </section>
 
-        <section class="about-section">
-            <div class="about-container">
+        <section class="Otvrtki">
+            <div class="Otvrtki-kontejner">
             <h3>O tvrtki</h3>
-            <div class="about-content-grid">
+            <div class="Otvrtki-dio-grid">
                 <p>Tvrtka <strong>Bušenje Kamena d.o.o.</strong>  osnovana je s ciljem pružanja vrhunskih građevinskih usluga specijaliziranih za beton i kamen. Naš tim stručnjaka</p>
                 <p>koristi napredne metode kako bi osigurao statičku stabilnost objekata prilikom intervencija. <br><br> Posjedujemo certifikate za rad na visini i rad u zatvorenim prostorima. <mark>Sigurnost i čistoća</mark> na gradilištu su nam prioritet. Bilo da se radi o manjim kućnim popravcima ili velikim infrastrukturnim projektima, pristupamo s istom pažnjom.</p>
             </div>
             </div>
         </section>
 
-        <section id="cjenik" class="pricing-section">
+        <section id="cjenik" class="cijenik">
             <h3>Okvirni cjenik usluga (2024.)</h3>
                 <table>
                     <colgroup>
@@ -110,19 +109,19 @@
         <section class="contact-section">
             <div class="Kontaktkocka">
             <h3>Pošaljite upit</h3>
-            <div class="contact-form-container">
+            <div class="kontakt-form-kontejner">
                 <form action="" method="post">
                     <fieldset>
                         <legend>KONTAKT PODACI</legend>
-                        <div class="form-group">
+                        <div class="form-grupa">
                             <label for="ime">Ime i Prezime:</label>
                             <input type="text" id="ime" name="ime" required>
                         </div>
-                        <div class="form-group">
+                        <div class="form-grupa">
                             <label for="email">E-mail adresa:</label>
                             <input type="email" id="email" name="email" required>
                         </div>
-                        <div class="form-group">
+                        <div class="form-grupa">
                             <label for="vrsta">Vrsta radova:</label>
                              <select name="vrsta" id="vrsta">
                                 <option value="1">Bušenje zida</option>
@@ -131,11 +130,11 @@
                                 <option value="4">Obrada kamena</option>
                              </select>
                         </div>
-                        <div class="form-group">
+                        <div class="form-grupa">
                             <label for="opis">Opis posla:</label>
                             <textarea id="opis" name="opis" rows="4"></textarea>
                         </div>
-                        <div class="form-group checkbox-group">
+                        <div class="form-grupa checkbox-group">
                             <input type="checkbox" id="hitno" name="hitno">
                             <label for="hitno">Hitna intervencija</label>
                         </div>
@@ -143,12 +142,12 @@
                 </form>
             </div>
             
-            <div class="range-status-group">
-                    <label for="satisfaction">Opterećenost termina:</label>
-                    <input type="range" id="satisfaction" name="satisfaction" min="0" max="7" oninput="res.value=parseInt(satisfaction.value)">
+            <div class="dio-opterecenost">
+                    <label for="naslov-gornji-opterecenost">Opterećenost termina:</label>
+                    <input type="range" id="naslov-gornji-opterecenost" name="naslov-gornji-opterecenost" min="0" max="7" oninput="res.value=parseInt(satisfaction.value)">
                     <label for="popunjenost">Trenutno imamo veliku popunjenost termina.</label>
 
-                    <button type="submit" class="btn-submit">POŠALJI UPIT</button>
+                    <button type="submit" class="btn-posalji">POŠALJI UPIT</button>
             </div>
 
             </div>
