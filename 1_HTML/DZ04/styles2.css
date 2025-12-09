@@ -16,7 +16,7 @@
 
 body {
     color: var(--color-text-dark);
-    background-color: whitesmoke;
+    background-color: rgb(224, 224, 224);
 }
 
 a {
@@ -281,24 +281,186 @@ tbody tr:nth-child(5){
     font-size: 0.8em;
 }
 
+/* Sekcija Kontakt (Forma) */
+.Kontaktkocka{
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    height: 800px;
+    width: 1110px;
+    margin-left: 24px;
+    margin-top: -45px;
+    padding-top: 70px;
+    background-color: whitesmoke;
+}
+
+.contact-section {
+    background-color: white;
+    padding-bottom: 80px;
+}
+
+.contact-section h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 35px;
+}
+
+.contact-form-container {
+    background-color: var(--color-text-light);
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+fieldset { /* linije doticu KONTAKT PODACI*/
+   border: 2px solid var(--color-border);
+   border-radius: 8px;
+
+}
+
+legend {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: 1.2em;
+    margin-left: 24px;
+    padding-right: 10px;
+    padding-left: 10px;
+    color: var(--color-accent);
+    margin-bottom: 15px;
+}
+
+.form-group {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-bottom: 2px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.9em;
+    margin-bottom: 6px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid var(--color-border);
+    font-size: 1.4em;
+    border-radius: 6px;
+}
+
+#vrsta{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid red;
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    font-size: 0.9em;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-weight: lighter;
+}
+
+label[for="hitno"] {
+    padding-top: 13px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: 16px; 
+    height: 16px;
+    margin-right: 10px;
+    margin-top: 12px;
+}
+
+.range-status-group {
+    max-width: 550px;
+    margin: 30px auto;
+    padding: 0;
+}
+
+label[for="satisfaction"]{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.range-status-group label[for="satisfaction"] {
+    display: block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 0.9em;
+    margin-left: 0; 
+} 
+
+.range-status-group label[for="popunjenost"]{
+    display: block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    font-size: 0.85em;
+}
+
+input[type="range"] {
+    touch-action: pan-y;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    accent-color: red;
+}
+
+.btn-submit {
+    width: 100%;
+    background-color: var(--color-accent);
+    color: var(--color-primary);
+    border: none;
+    padding: 12px 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1em;
+    margin-top: 40px;
+    box-shadow: var(--color-border) 0px 3px 7px;
+}
+
+.btn-submit:hover {
+    background-color: #d1882c;
+}
+
 /* Footer */
 footer {
     background-color: #222;
-    color: #999;
     padding: 20px;
     text-align: center;
     font-size: 0.85em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 footer a {
     color: var(--color-accent);
+   
+}
+.emaill {
+    text-decoration: underline;
 }
 
 footer p {
     margin-bottom: 5px;
+    color: var(--color-text-light);
+}
+
+.hr{
+    border: rgb(75, 75, 75) 1px solid;
+    margin-top: 15px;
 }
 
 .copyright {
     margin-top: 15px;
-    font-size: 0.75em;
+    font-size: 0.9em;
+    color: rgb(123, 123, 123);
 }

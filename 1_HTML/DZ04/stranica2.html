@@ -108,15 +108,59 @@
         </section>
 
         <section class="contact-section">
+            <div class="Kontaktkocka">
+            <h3>Pošaljite upit</h3>
+            <div class="contact-form-container">
+                <form action="" method="post">
+                    <fieldset>
+                        <legend>KONTAKT PODACI</legend>
+                        <div class="form-group">
+                            <label for="ime">Ime i Prezime:</label>
+                            <input type="text" id="ime" name="ime" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail adresa:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="vrsta">Vrsta radova:</label>
+                             <select name="vrsta" id="vrsta">
+                                <option value="1">Bušenje zida</option>
+                                <option value="2">Bušenje betona</option>
+                                <option value="3">Rezanje zida</option>
+                                <option value="4">Obrada kamena</option>
+                             </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="opis">Opis posla:</label>
+                            <textarea id="opis" name="opis" rows="4"></textarea>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="hitno" name="hitno">
+                            <label for="hitno">Hitna intervencija</label>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
             
+            <div class="range-status-group">
+                    <label for="satisfaction">Opterećenost termina:</label>
+                    <input type="range" id="satisfaction" name="satisfaction" min="0" max="7" oninput="res.value=parseInt(satisfaction.value)">
+                    <label for="popunjenost">Trenutno imamo veliku popunjenost termina.</label>
+
+                    <button type="submit" class="btn-submit">POŠALJI UPIT</button>
+            </div>
+
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>Bušenje Kamena d.o.o.</p>
+        <p><strong>Bušenje Kamena d.o.o.</strong></p>
         <p>Industrijska cesta 5</p>
         <p>10000 Zagreb, Hrvatska</p>
-        <p>Email: <a href="mailto:info@busenjekamena.hr">info@busenjekamena.hr</a></p>
+        <p>Email: <a class="emaill" href="mailto:info@busenjekamena.hr">info@busenjekamena.hr</a></p>
+        <hr class="hr">
         <p class="copyright">&copy; 2024 Bušenje Kamena. Sva prava pridržana.</p>
     </footer>
 

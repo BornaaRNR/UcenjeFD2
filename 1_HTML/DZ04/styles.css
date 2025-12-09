@@ -44,6 +44,8 @@ fieldset{ /* linija oko sigurne prijave i pozadina*/
     margin-top: 0;
     margin-bottom: 30px;
     margin-left: 10px;
+    padding-left:10px;
+    padding-right: 10px;
 }
 
 .info-input{ /*Korisnicko ime i lozinka s boxom */
