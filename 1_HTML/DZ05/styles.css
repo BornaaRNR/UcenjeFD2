@@ -1,0 +1,241 @@
+:root {
+    --crvena-boja:#8b0000;
+    --bijela-boja: #ffffff;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    background-color: wheat;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #f5e4d4;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Stilovi za Zaglavlje --- */
+.zaglavlje {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.zaglavlje h2 {
+    font-family: 'Georgia', serif;
+    margin-bottom: 5px;
+    font-size: 2em;
+    color: var(--crvena-boja);
+}
+
+.zaglavlje p {
+    margin-top: 0;
+    color: #666;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.05em;
+    padding-bottom: 20px;
+    border-bottom: 2px double var(--crvena-boja)
+}
+
+.footer-separator {
+    border: 0;
+    height: 1px;
+    background-color: #ccc;
+    margin: 20px 0;
+}
+
+
+/* --- Stilovi za Navigaciju (Crveni gumbi) --- */
+nav {
+    background-color: #b73838; /* Crvena boja iz primjera */
+    padding: 10px 0;
+    text-align: center;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #d85c5c;
+}
+
+
+/*prvi blok*/
+.blok {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    height: 510px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.blok-naslov {
+    border-left: 5px solid var(--crvena-boja); /* Crvena linija pokraj naslova */
+    padding-left: 10px;
+    margin-bottom: 20px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.blok-naslov h3 {
+    margin: 0;
+    color: black;
+    font-size: 1.6em;
+}
+
+/* --- Stilovi za Blok Radnje --- */
+.radnja-sadrzaj {
+    display: flex;
+    gap: 20px;
+}
+
+.radnja-tekst {
+    width: 21%;
+}
+
+.Safranek{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 0.95em;
+}
+
+.radnja-tekst p{
+    font-size: 1.1em;
+    letter-spacing: 0.09em;
+    line-height: 1.4;
+}
+
+.radnja-citat {
+    border-left: 3px solid #ccc;
+    padding-left: 10px;
+    font-style: italic;
+    font-size: 1.1em;
+    margin-left: 0;
+    margin-right: 0;
+    height: 60px;
+    background-color: #e5e5e543;
+    display: flex;
+    align-items: center;
+}
+
+.youtube-box {
+    flex: 2;
+    height: 300px; 
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: 75px;
+}
+
+.youtube-box::after {
+    content: none; 
+}
+
+/* Stilovi za tablicu Likova */
+
+
+.blok2{
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    height: 225px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    color: white;
+}
+
+thead th{
+    background-color: var(--crvena-boja);
+}
+
+tbody tr:nth-child(2){
+    background-color:#dddddd44;
+    border-right: 1px solid yellowgreen ;
+}
+
+/* Stilovi za Formu */
+.blok3{
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    height: 320px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; 
+}
+
+form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+form button {
+    background-color: #b73838;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #d85c5c;
+}
+
+.podnozje {
+    text-align: center;
+    padding: 10px 0;
+    color: #666;
+    font-size: 0.9em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
