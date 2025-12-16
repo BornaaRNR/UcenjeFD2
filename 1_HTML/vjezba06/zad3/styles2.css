@@ -1,0 +1,27 @@
+body{
+    justify-items: center;
+    background-color: dimgray;
+}
+
+h2{
+    font-size: 12em;
+    background-image: url(https://muzikercdn.com/uploads/products/19998/1999829/thumb_d_gallery_base_edb5dc03.jpg);
+    background-clip: text;
+    background-size: 300% 300%;
+    color: transparent;
+    animation: animate 8s ease infinite;
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0%;
+    }
+
+    50% {
+        background-position: 100%;
+    }
+
+    100%{
+        background-position: 0%;
+    }
+}

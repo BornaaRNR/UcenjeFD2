@@ -1,0 +1,87 @@
+body{
+    background-color: aliceblue;
+    font-family: sans-serif;
+}
+
+.container{
+    background-color: white;
+    /* border: 1px solid red; */
+    max-width: 700px;
+    margin: auto;
+    padding: 1rem;
+}
+
+.forma{
+    border: 1px solid #eaeceb;
+    border-radius: 10px;
+    padding: 1em;/*kako bi uvuko granice*/
+    margin-bottom: 30px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/*kako bi se razvuklo do kraja*/
+.unos{
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    font-size: 1.5rem;
+    border-bottom: 2px solid blue;
+    padding-bottom: 10px;
+    max-width: 180px;
+}
+
+label{
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+select{
+    padding: 8px;
+    border:1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"]{
+    background-color: green;
+    color: white;
+    padding: 0.5rem;
+    border: 0;
+    border-radius: 5px;
+    max-width: 500px;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th{
+    background-color: #2596be;
+    color: white;
+    padding: 5px;
+    font-size: 0.8em;
+    text-align: left;
+}
+
+tbody > tr > td:first-child, thead > tr > th:first-child, thead > tr > th:last-child{
+    text-align: center;
+}
+
+tbody > tr > td:last-child{
+    color: red;
+    text-align: center;
+}
+
+td{
+    padding: 7px;
+    border-bottom: 1px solid #eee;
+}
