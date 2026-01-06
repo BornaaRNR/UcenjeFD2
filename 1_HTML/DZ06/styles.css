@@ -6,13 +6,13 @@
 }
 
 body {
-    background-color: #fdf6e3; /* Krem pozadina sa slike */
+    background-color: #fdf6e3;
     color: #333;
 }
 
-/* Navbar */
+
 header {
-    background-color: #d35400; /* Narančasta boja */
+    background-color: #d35400; 
     padding: 15px 50px;
     color: white;
 }
@@ -27,7 +27,13 @@ header {
 
 .logo {
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    margin-left: 9%;
+}
+
+nav{
+    margin-right: 10%;
+    font-weight: bold;
 }
 
 nav ul {
@@ -55,17 +61,27 @@ nav ul li a {
 }
 
 .hero-text p {
-    color: #777;
+    color: #9a9999;
+    font-size: 1.2rem;
 }
 
-/* Zajednički kontejneri */
+.container1 {
+    max-width: 900px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    
+}
+
 .container {
     max-width: 900px;
     margin: 20px auto;
     background: white;
-    padding: 30px;
+    padding: 0 20px;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    padding-top: 40px;    /* Razmak od gornjeg ruba unutra */
+    padding-bottom: 20px; /* Razmak od doljnjeg ruba unutra */
 }
 
 .section-title {
@@ -92,8 +108,7 @@ nav ul li a {
     background: #fff;
     border: 1px solid #eee;
     border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    height: 310px;
 }
 
 .image-placeholder {
@@ -104,6 +119,8 @@ nav ul li a {
     justify-content: center;
     color: #888;
     font-weight: bold;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 
 .card-content {
@@ -115,26 +132,30 @@ nav ul li a {
     justify-content: space-between;
     align-items: baseline;
     margin-bottom: 10px;
+    flex-direction: column;
 }
 
 .card-header h3 {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #333;
+    order: 2;
 }
 
 .price {
     color: #d35400;
     font-weight: bold;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
+    order: 1;
+    align-self: flex-end;
 }
 
 .card-content p {
-    font-size: 0.85rem;
+    font-size: 1rem;
     color: #666;
     line-height: 1.4;
 }
 
-/* Tablica */
+
 .nutrition-table {
     width: 100%;
     border-collapse: collapse;
@@ -159,13 +180,16 @@ nav ul li a {
     background-color: #f9f9f9;
 }
 
+
+
 /* Forma */
 .form-container {
-    background-color: #2c3e50; /* Tamna boja kao na slici */
+    background-color: #2c3e50; 
     color: white;
 }
 
 .section-title.light {
+    border-left: 5px solid white;
     color: white;
 }
 
@@ -177,6 +201,7 @@ nav ul li a {
     display: block;
     margin-bottom: 5px;
     font-size: 0.9rem;
+    font-weight: bold;
 }
 
 .form-group input, .form-group select, .form-group textarea {
@@ -202,6 +227,7 @@ nav ul li a {
     font-weight: bold;
     cursor: pointer;
     margin-top: 10px;
+    font-size: 1rem;
 }
 
 .submit-btn:hover {
