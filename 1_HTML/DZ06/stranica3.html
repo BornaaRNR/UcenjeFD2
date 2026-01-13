@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recept</title>
+    <link rel="stylesheet" href="styles3.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="card main-card">
+            <span class="badge">Premium Recept</span>
+            <h1>Kremasta Carbonara</h1>
+            <div class="recipe-image">
+                <img src="https://images.unsplash.com/photo-1612874742237-6526221588e3?q=80&w=1000&auto=format&fit=crop" alt="Carbonara">
+            </div>
+        </div>
+
+        <div class="columns">
+            <div class="card side-card">
+                <h3>🛒 Sastojci</h3>
+                <ul>
+                    <li><span>400g</span> Špageta</li>
+                    <li><span>150g</span> Guancialea</li>
+                    <li><span>4</span> Svježa jaja</li>
+                    <li><span>50g</span> Pecorino Romano</li>
+                    <li><span>puno</span> Crnog papra</li>
+                </ul>
+            </div>
+
+            <div class="card side-card">
+                <h3>👨‍🍳 Priprema</h3>
+                <ol>
+                    <li>Stavite tjesteninu u jako posoljenu kipuću vodu.</li>
+                    <li>Pržite guanciale na laganoj vatri dok masnoća ne postane prozirna i hrskava.</li>
+                    <li>U posudi pomiješajte jaja i naribani sir u gustu kremu.</li>
+                    <li>Sjedinite sve sastojke izvan vatre koristeći malo vode od kuhanja za emulziju.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="card rating-card">
+            <p>Sviđa vam se recept?</p>
+            <div class="stars" id="star-rating">
+                <span class="star" data-value="1">&#9733;</span>
+                <span class="star" data-value="2">&#9733;</span>
+                <span class="star" data-value="3">&#9733;</span>
+                <span class="star" data-value="4">&#9733;</span>
+                <span class="star" data-value="5">&#9733;</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const stars = document.querySelectorAll('.star');
+        let currentRating = 0;
+
+        stars.forEach(star => {
+            // Označavanje prilikom prelaska mišem
+            star.addEventListener('mouseover', () => {
+                resetStars();
+                highlightStars(star.dataset.value);
+            });
+
+            // Vraćanje na kliknuto stanje nakon micanja miša
+            star.addEventListener('mouseleave', () => {
+                resetStars();
+                if (currentRating > 0) {
+                    highlightStars(currentRating);
+                }
+            });
+
+            // Postavljanje ocjene na klik
+            star.addEventListener('click', () => {
+                currentRating = star.dataset.value;
+                highlightStars(currentRating);
+            });
+        });
+
+        function highlightStars(value) {
+            for (let i = 0; i < value; i++) {
+                stars[i].classList.add('active');
+            }
+        }
+
+        function resetStars() {
+            stars.forEach(s => s.classList.remove('active'));
+        }
+    </script>
+
+</body>
+</html>
