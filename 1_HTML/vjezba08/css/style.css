@@ -1,3 +1,22 @@
 body{
     background-color: antiquewhite;
 }
+
+@font-face {
+    font-family: 'Ljubav';
+    src:url('../fonts/LavishlyYours-Regular.ttf') format('truetype');
+}
+
+h1 {
+    font-family: 'SpaceGrotesk', 'Times New Roman', 'serif';
+}
+
+@font-face {
+    font-family: 'Galada';
+    src: url('../fonts/Galada-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'SpaceGrotesk';
+    src: url('../fonts/SpaceGrotesk-Regular.ttf') format('truetype');
+}
