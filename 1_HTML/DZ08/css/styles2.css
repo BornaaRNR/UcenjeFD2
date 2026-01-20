@@ -1,0 +1,128 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to right, #0d141d, #1a232e, #0d141d);
+    color: white;
+    text-align: center;
+}
+
+header {
+    background-color: #2e455b;
+    padding: 40px 20px;
+}
+
+header h1 { 
+    font-size: 2.5rem;
+} 
+.subtitle { 
+    color: #bdc3c7; font-size: 1.1rem; 
+}
+
+
+
+
+nav {
+    background-color: #354a5e;
+    padding: 15px 0;
+    margin-top: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 20px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    background-color: #1abc9c; /* Surf Green */
+    color: white;
+}
+
+
+
+
+.section {
+    position: relative;
+    padding: 15px;
+    min-height: 100px;
+    overflow: hidden;
+}
+
+.content { position: relative; z-index: 2; max-width: 1000px; margin: 0 auto; }
+
+
+
+
+.story-box {
+    background-color: rgba(33, 42, 54, 0.6); /* Poluprozirna tamna */
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    padding: 40px;
+    border-radius: 15px;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto 50px auto;
+}
+
+.accent-text {
+    color: #1abc9c;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+
+
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 800px;
+    margin: 150px auto 40px auto;
+}
+
+.team-card {
+    background: white;
+    color: #333;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.profile-img-container {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #1abc9c;
+}
+
+.profile-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team-card h3 { margin-bottom: 5px; color: #1a2634; }
+.role { color: #7f8c8d; font-size: 0.9rem; }
+
+footer {
+    background-color: #2e455b;
+    padding: 20px;
+    color: white;
+    font-size: 0.9rem;
+}
