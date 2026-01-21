@@ -13,7 +13,7 @@ body {
 
 header {
     background-color: #2e455b;
-    padding: 40px 20px;
+    padding: 30px 20px;
 }
 
 header h1 {
@@ -106,7 +106,6 @@ footer {
 }
 
 .completed { background-color: #1abc9c; } /* Surf Green */
-.in-progress { background-color: #00cec9; }
 .new { background-color: #00b894; }
 
 .card-content {
@@ -121,7 +120,7 @@ footer {
 
 .card-content p {
     color: #cbd5e1;
-    font-size: 0.9rem;
+    font-size: 1rem;
     line-height: 1.5;
     margin-bottom: 20px;
 }
@@ -137,10 +136,13 @@ footer {
 .tech {
     font-size: 0.8rem;
     color: #1abc9c;
+    font-family: jetbrains mono, monospace;
 }
 
 .details-link {
-    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-color:#1abc9c ;
+    text-underline-offset: 5px;
     color: white;
     font-size: 0.85rem;
     font-weight: bold;

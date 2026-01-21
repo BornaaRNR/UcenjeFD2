@@ -1,0 +1,124 @@
+body {
+    background: wheat;
+    font-family: sans-serif;
+}
+
+.panel{
+    border: 1px solid black;
+    min-height: 200px;
+    font-size: 2rem;
+    text-align: center; 
+}
+
+ul{  
+    list-style:none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+}
+
+li{
+    text-align: center;
+}
+
+.a{grid-area: a;}
+.b{grid-area: b;}
+.c{grid-area: c;}
+.d{grid-area: d;}
+.e{grid-area: e;}
+.f{grid-area: f;}
+
+
+/* Tablet */
+@media (min-width: 425px) and (max-width: 600px) {
+
+    .a, .b, .f{
+        display: none;
+    }
+    body{
+        background-color: aliceblue;
+    }
+    ul{
+        flex-direction: row;
+    }
+    .container{
+        display: grid;
+        grid-template-areas: 
+        "c"
+        "d"
+        "e";
+        gap:10px
+    }
+}
+
+/* Veci tablet */
+@media (min-width: 601px) {
+    .a, .d, .e{
+        display: none;
+    }
+    body{
+        background-color: beige;
+    }
+    ul{
+        flex-direction: row;
+        justify-content: center;
+    }
+    .container{
+        display: grid;
+        grid-template-areas: 
+        "b b"
+        "c f";
+        gap:10px
+    }
+}
+
+/* Desktop */
+@media (min-width: 850px) {
+    .a, .d, .e{
+        display: grid;
+    }
+    body{
+        background-color: chocolate;
+    }
+    .container{
+        display:grid;
+        grid-template-areas: 
+        "a b b"
+        "c d e"
+        "f f f";
+        gap:10px
+    }
+}
+
+@media print{
+    header{
+        display: none;
+    }
+    h1{
+        font-family: serif;
+    }
+    p{
+        text-align: justify;
+        font-size: 1.5rem;
+        text-indent: 30px;
+    }
+    .container{
+        display: none;
+        grid-template-areas: 
+        "a b c d";
+    }
+}
+
+@media (prefers-color-scheme: dark){
+    li a{
+        color: white;
+        background-color: black;
+    }
+}
