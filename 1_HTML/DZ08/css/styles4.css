@@ -69,7 +69,9 @@ footer {
 }
 
 .project-card {
-    background-color: #1e293b;
+    background-color: rgba(33, 42, 54, 0.6); /* Poluprozirna tamna */
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
     border-radius: 12px;
     overflow: hidden;
     text-align: left;

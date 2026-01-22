@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontaktirajte Nas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles7.css">
+</head>
+<body>
+
+    <header>
+        <h1>Kontaktirajte Nas</h1>
+        <p>Pošaljite nam detaljan upit i javit ćemo vam se u roku od 24 sata.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../pocetna/pocetna.html">Početna</a></li>
+            <li><a href="../onama/onama.html">O nama</a></li>
+            <li><a href="../usluge/usluge.html">Usluge</a></li>
+            <li><a href="../projekti/projekti.html">Projekti</a></li>
+            <li><a href="../blog/blog.html">Blog</a></li>
+            <li><a href="../galerija/galerija.html">Galerija</a></li>
+            <li><a href="../kontakt/kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <main class="contact-section">
+        <div class="contact-card">
+            <form action="#" method="post">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Ime i prezime</label>
+                        <input type="text" placeholder="Vaše ime..." required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email adresa</label>
+                        <input type="email" placeholder="email@primjer.com" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Zanima me usluga:</label>
+                        <select>
+                            <option>Frontend Razvoj</option>
+                            <option>Backend Razvoj</option>
+                            <option>Web Dizajn</option>
+                            <option>Fullstack Razvoj</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Željeni rok završetka:</label>
+                        <input type="date">
+                    </div>
+                </div>
+
+                <div class="form-group full-width">
+                    <label>Planirani budžet: <span id="budget-value">1500 €</span></label>
+                    <input type="range" min="100" max="5000" value="1500" step="50" class="budget-slider" id="budget-range">
+                </div>
+
+                <div class="form-group full-width">
+                    <label>Opis projekta</label>
+                    <textarea rows="5" placeholder="Recite nam nešto više o vašim idejama..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">POŠALJI UPIT</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Edunova, sva prava pridržana</p>
+    </footer>
+
+    <script>
+        const slider = document.getElementById('budget-range');
+        const output = document.getElementById('budget-value');
+        slider.oninput = function() {
+            output.innerHTML = this.value + " €";
+        }
+    </script>
+</body>
+</html>

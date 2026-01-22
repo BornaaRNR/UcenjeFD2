@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to right, #0d141d, #1a232e, #0d141d);
+    color: white;
+    text-align: center;
+}
+
+header {
+    background-color: #2e455b;
+    padding: 30px 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+nav {
+    background-color: #354a5e;
+    padding: 15px 0;
+    margin-top: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 20px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    background-color: #1abc9c; /* Surf Green */
+    color: white;
+}
+
+footer {
+    background-color: #2e455b;
+    padding: 20px;
+    color: white;
+    font-size: 0.9rem;
+    margin-top: 60px;
+}
+.contact-section {
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-card {
+    background-color: rgba(33, 42, 54, 0.6); /* Poluprozirna tamna */
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    padding: 40px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 500px;
+    text-align: left;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.full-width { margin-bottom: 25px; }
+
+label {
+    color: #1abc9c; /* Surf Green boja labela */
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+input, select, textarea {
+    background-color: rgba(26, 26, 27, 0.623); /* Poluprozirna tamna */
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid #1abc9c25;
+    border-radius: 5px;
+    padding: 12px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    outline: none;
+}
+
+
+
+/* Stil klizača (slider) */
+.budget-slider {
+    appearance: none; 
+    width: 100%;
+    height: 5px;
+    background: #334155;
+    outline: none;
+    -webkit-appearance: none;
+    border-radius: 5px;
+}
+
+.budget-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #1abc9c;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Submit gumb */
+.submit-btn {
+    background-color: #1abc9c;
+    color: #1a2634;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.submit-btn:hover { background-color: #16a085; }
