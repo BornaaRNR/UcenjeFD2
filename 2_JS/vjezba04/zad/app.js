@@ -11,7 +11,7 @@ document.getElementById('izvedi').addEventListener('click', () => {
   const x= Number(a);
   const y= Number(b);
   const z= Number(c);
-  const w= Number(d);
+  // const w= Number(d);
 
 
   // Za svaki zadatak zahtijevamo određene ulaze
@@ -272,10 +272,77 @@ document.getElementById('izvedi').addEventListener('click', () => {
   }
   //kraj zad 8
   
-  
+  if (zadatak === '9'){
+    rezultat.innerHTML=c
+
+    return;
+  }
+  //kraj zad 9
+
+  if (zadatak === '10'){
+    console.log(x,y,z,w)
+    if(!x && x!=0){
+    rezultat.innerHTML='Unesite broj A'
+    return;
+    }
+    if(!y && y!=0){
+    rezultat.innerHTML='Unesite broj B'
+    return;
+    }
+    if(!z && z!=0){
+    rezultat.innerHTML='Unesite broj C'
+    return;
+    }
+    if(!w && w!=0){
+    rezultat.innerHTML='Unesite broj D'
+    return;
+    }
+
+    rezultat.innerHTML=(x+y)*(z+w);
+    return;
+  }
+  //kraj zad 10
+
+  if (zadatak === '11'){
+    if(!y){
+      rezultat.innerHTML='Obavezan unos u polje B'
+      return;
+    }
+
+    // if(y.toLowerCase() === 'osijek'){
+    //   rezultat.innerHTML=`${y} je sjediste Edunove`
+    // }else{
+    //   rezultat.innerHTML=`${y} nije sjediste Edunove`
+    // }
+
+    rezultat.innerHTML=y.toLowerCase() === 'osijek'?`${y} je sjediste Edunove`: `${b} nije sjediste Edunove`
+    return;
+  }
+  //kraj zad 11
+
+  if (zadatak === '12'){
+    if(!x || x<=0){
+    rezultat.innerHTML='Obavezan unos u polje A'
+    return;
+    }
+    rezultat.innerHTML=(x*x*x);
+    return;
+  }
+  //kraj zad 12
+
+  if(zadatak === '13'){
+    const cijeliBroj = parseInt(d);
+    const decimalniBroj = parseFloat(d);
+    if(!decimalniBroj){
+      rezultat.innerHTML='Niste unijeli broj'
+      return;
+    }
+
+    console.log(cijeliBroj,decimalniBroj)
+    rezultat.innerHTML= decimalniBroj - cijeliBroj
+    return;
+    }
+
   // ovo će se ispisati ako u HTML dodatke option za zadatak a ovdje ga ne obradite
   rezultat.innerHTML = `Nepoznati zadatak ${zadatak}`;
 });
-
-
-
