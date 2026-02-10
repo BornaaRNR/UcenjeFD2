@@ -61,6 +61,30 @@ document.getElementById('izvedi').addEventListener('click', () => {
       }
 
     break;
+
+
+    case '7':
+      const doBroja = Number(a);
+      if(!doBroja){
+        rezultat.innerHTML='Nisi unio broj';
+        return;
+      }
+      if(doBroja<=1){
+        rezultat.innerHTML='Obaezno broj veci od 1';
+        return;
+      }
+
+      let s='';
+      for(let i=1;i<=doBroja;i++){
+        if(i===doBroja){
+          s += 1;
+        }else{
+          s += i + ', ';
+        }
+      }
+      rezultat.innerHTML = s;
+
+    break;
     default:
       rezultat.innerHTML = `Nepoznati zadatak ${zadatak}`;
   }
