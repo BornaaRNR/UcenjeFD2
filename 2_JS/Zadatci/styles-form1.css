@@ -1,0 +1,183 @@
+/* 1. REGISTRACIJA VARIJABLE (Mora biti na samom vrhu) */
+@property --bg {
+  syntax: '<color>';
+  inherits: false;
+  initial-value: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* Tvoje nove varijable za animaciju */
+    --s: 25vmin;
+    --p: calc(var(--s) / 2);
+    --c1: pink;
+    --c2: dodgerblue;
+    --c3: white;
+    --bg: var(--c3);
+    --d: 4000ms;
+    --e: cubic-bezier(0.76, 0, 0.24, 1);
+    
+    font-family: 'Segoe UI', sans-serif;
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden; /* Zadržano iz tvog starog koda */
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Implementacija animirane pozadine */
+    background-color: var(--bg);
+    background-image:
+        linear-gradient(45deg, var(--c1) 25%, transparent 25%),
+        linear-gradient(-45deg, var(--c1) 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, var(--c2) 75%),
+        linear-gradient(-45deg, transparent 75%, var(--c2) 75%);
+    background-size: var(--s) var(--s);
+    
+    animation: 
+        color var(--d) var(--e) infinite,
+        position var(--d) var(--e) infinite;
+}
+
+/* Stil za centralnu karticu - prilagođen da bude vidljiv na šarenoj pozadini */
+.main-card {
+    background: rgba(255, 255, 255, 0.9); /* Povećana neprozirnost jer je pozadina svijetla */
+    backdrop-filter: blur(10px); /* Efekt zamućenja pozadine iza kartice */
+    width: 500px;
+    padding: 50px 40px;
+    border-radius: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+
+/* Naslov i tekst prilagođeni tamnijoj boji jer je kartica sada svijetla */
+h2 {
+    color: #333; 
+    margin-bottom: 25px;
+    font-size: 1.5rem;
+}
+
+.input-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+/* Inputi prilagođeni svijetloj kartici */
+input {
+    background: rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 12px;
+    border-radius: 5px;
+    color: #333;
+    font-size: 1rem;
+    outline: none;
+}
+
+input::placeholder {
+    color: #888;
+}
+
+.result-display {
+    background: rgba(255, 255, 255, 0.8);
+    min-height: 100px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    color: #555;
+    padding: 20px;
+    border: 1px dashed #3498db;
+    line-height: 1.5;
+}
+
+.btn-izvrsi {
+    width: 100%;
+    padding: 15px;
+    background: #3498db;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-izvrsi:hover {
+    background: #2980b9;
+}
+
+.back-link {
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+    color: #888;
+    text-decoration: none;
+    font-size: 0.85rem;
+}
+
+.back-link:hover {
+    color: #3498db;
+}
+
+/* KEYFRAMES ZA ANIMACIJU */
+@keyframes color {
+  0%, 25% { --bg: var(--c3); }
+  26%, 50% { --bg: var(--c1); }
+  51%, 75% { --bg: var(--c3); }
+  76%, 100% { --bg: var(--c2); }
+}
+
+@keyframes position {
+  0% {
+    background-position: 
+      calc(var(--p) * 1) calc(var(--p) * 0), 
+      calc(var(--p) * -1) calc(var(--p) * 1), 
+      calc(var(--p) * 1) calc(var(--p) * -1), 
+      calc(var(--p) * -1) calc(var(--p) * 0);
+  }
+  25% {
+    background-position: 
+      calc(var(--p) * 1) calc(var(--p) * 4), 
+      calc(var(--p) * -1) calc(var(--p) * 5), 
+      calc(var(--p) * 1) calc(var(--p) * 3), 
+      calc(var(--p) * -1) calc(var(--p) * 4);
+  }
+  50% {
+    background-position: 
+      calc(var(--p) * 3) calc(var(--p) * 8), 
+      calc(var(--p) * -3) calc(var(--p) * 9), 
+      calc(var(--p) * 2) calc(var(--p) * 7), 
+      calc(var(--p) * -2) calc(var(--p) * 8);
+  }
+  75% {
+    background-position: 
+      calc(var(--p) * 3) calc(var(--p) * 12), 
+      calc(var(--p) * -3) calc(var(--p) * 13), 
+      calc(var(--p) * 2) calc(var(--p) * 11), 
+      calc(var(--p) * -2) calc(var(--p) * 12);
+  }
+  100% {    
+    background-position: 
+      calc(var(--p) * 5) calc(var(--p) * 16), 
+      calc(var(--p) * -5) calc(var(--p) * 17), 
+      calc(var(--p) * 5) calc(var(--p) * 15), 
+      calc(var(--p) * -5) calc(var(--p) * 16);
+  }
+}
+
+@media (prefers-reduced-motion) {
+  body { animation: none; }
+}
+
