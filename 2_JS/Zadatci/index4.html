@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prosjek ocjena</title>
+    <link rel="stylesheet" href="styles-form4.css">
+</head>
+<body>
+
+    <div class="main-card">
+        <h2>Prosjek ocjena</h2>
+        
+        <div class="input-group">
+            <input type="number" id="brojOcjena" placeholder="Koliko ocjena želite unijeti?">
+            <div id="unosOcjeneSekcija" style="margin-top: 15px; display: none;">
+                <input type="number" id="trenutnaOcjena" placeholder="Unesite ocjenu">
+            </div>
+        </div>
+
+        <div id="rezultatBox" class="result-display">
+            Prvo odredite broj ocjena, a zatim unosite jednu po jednu.
+        </div>
+
+        <button id="btnIzvrsi" class="btn-izvrsi">UNESI OCJENU</button>
+
+        <a href="index.html" class="back-link">Natrag</a>
+    </div>
+
+    <script src="js4.js"></script>
+</body>
+</html>
