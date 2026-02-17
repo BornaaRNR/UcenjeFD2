@@ -109,6 +109,32 @@ document.getElementById('izvedi').addEventListener('click', () => {
     break;
     case '4':
       // rješavanje 4. zadatak
+      // 4. za unesenu rijec u polje A provjerite da li je palindrom ili ne
+      // Ruzan Edo ode na zur
+      // ruzanedoodenazur
+      let s = '';
+      for(let i=0; i<a.length; i++){
+        if(a[i]!=' '){
+          s+=a[i].toLowerCase();
+        }
+      }
+      console.log(s)
+      let duljina=s.length;
+      let palindrom=true;
+
+      //2. prolazimo petljom do polovice duljine stringa
+      for (let i=0; i<duljina/2;i++){
+        // usporedimo znak na poziciji i sa znakom na "suptronoj" strani
+        if(s[i] !== s[duljina -1 -i]){
+          palindrom= false; // cim nademo par koji se ne podudara, prekidamo
+        }
+      }
+
+      if(palindrom){
+        rezultat.innerHTML='palindrom'
+      }else{
+        rezultat.innerHTML='nije palindrom'
+      }
 
       // kraj rješavanje 4. zadatak
     break;
