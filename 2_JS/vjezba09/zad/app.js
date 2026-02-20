@@ -1,9 +1,30 @@
+function ucitajBroj(b){
+  const b2=Number(b);
+  if(!b2){
+    rezultat.innerHTML="Nisi unio broj";
+    return false;
+  }
 
+  if(b2<2 || b2>100){
+    rezultat.innerHTML="Broj nije u zadanom rasponu, ponovi unos"
+    return false;
+  }
+  return b2;
+}
 
   const zadaci={
     z1:(a,b)=>{
       //1. ispisi apsolutnu vrijednost razlike brojeva A i B
       // console.log('Zadatak 1');
+      const a1=ucitajBroj(a);
+      if(!a){
+        return;
+      }
+      const b1=ucitajBroj(b);
+      if(!b){
+        return;
+      }
+      rezultat.innerHTML= Math.abs(a-b);
 
     },
     z2:(a,b)=>{
