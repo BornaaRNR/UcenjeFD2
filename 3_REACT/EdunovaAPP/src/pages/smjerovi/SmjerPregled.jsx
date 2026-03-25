@@ -1,13 +1,15 @@
 import { useEffect, useState } from "react";
 import SmjerServices from "../../services/smjerovi/SmjerServices";
-import { Table } from "react-bootstrap";
+import { Button, Table } from "react-bootstrap";
 import { NumericFormat } from "react-number-format";
 import { GrValidate } from "react-icons/gr";
 import FormatDatuma from "../../components/FormatDatuma";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { RouteNames } from "../../constants";
 
 export default function SmjerPregled(){
+
+    const navigate = useNavigate()
 
     const [smjerovi,setSmjerovi] = useState([])
 
@@ -17,6 +19,7 @@ export default function SmjerPregled(){
 
     async function ucitajSmjerove(){
         await SmjerServices.get().then((odgovor)=>{
+            //console.table(odgovor.data)
             setSmjerovi(odgovor.data)
         })
     }
@@ -25,9 +28,9 @@ export default function SmjerPregled(){
         <>
         <Link to={RouteNames.SMJEROVI_NOVI}
         className="btn btn-success w-100 my-3">
-            🤦‍♂️Dodavanje novog smjera
+            Dodavanje novog smjera
         </Link>
-        <Table>
+        <Table striped hover responsive>
             <thead>
                 <tr>
                     <th>Naziv</th>
@@ -40,10 +43,9 @@ export default function SmjerPregled(){
             </thead>
             <tbody>
                 {smjerovi && smjerovi.map((smjer)=>(
-                    <tr>
+                    <tr key={smjer.sifra}>
                         <td>{smjer.naziv}</td>
                         <td className="text-end">{smjer.trajanje} h
-                            
                         </td>
                         <td className="text-end">
                             <NumericFormat 
@@ -63,7 +65,11 @@ export default function SmjerPregled(){
                         <td className="text-center">
                             <GrValidate size={25} color={smjer.aktivan ? 'green' : 'red'}/>
                         </td>
-                        <td></td>
+                        <td>
+                            <Button onClick={()=>{navigate(`/smjerovi/${smjer.sifra}`)}}>
+                                Promjeni
+                            </Button>
+                        </td>
                     </tr>
                 ))}
             </tbody>
